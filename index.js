@@ -1,9 +1,5 @@
-var clickedButtonSaved = [];
-
 $(".rating-btn").on("click", function(event) {
-    var clickedButtonSaved = [];
     var clickedButton = (event.target.id);
-    clickedButtonSaved.push(clickedButton);
      
     $(".rating-btn").removeClass("chosen");
     $(this).addClass("chosen");
