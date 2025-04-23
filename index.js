@@ -7,11 +7,10 @@ $(".rating-btn").on("click", function(event) {
      
     $(".rating-btn").removeClass("chosen");
     $(this).addClass("chosen");
-    displayRating(clickedButtonSaved);
+    displayRating(clickedButton);
 })
 
 function displayRating(numberChosen) {
-    console.log("debug:" + numberChosen);
     switch (numberChosen) {
         case "one":
             $(".rating-selected").text("You selected 1 out of 5");
@@ -34,7 +33,7 @@ function displayRating(numberChosen) {
         break;
     
         default:
-            console.log("hello" + numberChosen);
+            console.log(numberChosen);
             break;
     }
 }
